@@ -9,6 +9,7 @@
 body {
     background-color: #121111;
     color: #333;
+    padding-top: 70px;
 }
 
 /* Navigation Bar */
@@ -18,7 +19,13 @@ body {
     justify-content: space-between;
     background: #0f0f0f;
     padding: 15px 20px;
-    position: relative;
+    position: fixed;         /* Make navbox fixed */
+    top: 0;                  /* Stick to the top */
+    left: 0;
+    width: 100%;             /* Full width */
+    z-index: 2000;           /* Stay above other content */
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
 }
 
 .logoname {
