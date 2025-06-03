@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAXX PORTFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbox">
+        <div class="logoname">
+            <h2>DRAXX</h2>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navlinks-container">
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#aboutus">About us</a></li>
+                </ul>
+            </div>
+            <div id="btn">
+                <ul>
+                    <li><a href="#contactz">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Welcome Section -->
+    <article class="main" id="portfolio">
+        <div class="mainbox">
+            <h1>Welcome to DRAXX</h1>
+            <br><br>
+            <p>
+                At DRAXX, we are committed to delivering innovative solutions tailored to your business needs.
+                Our team of experts combines creativity, technical skill, and industry experience to help you achieve your goals.
+            </p>
+        </div>
+    </article>
+
+    <br><br><br><br>
+
+    <!-- Services Section -->
+    <section class="services" id="service">
+        <h2>Our Services</h2>
+        <div class="servicebox">
+            <div class="service">
+                <h3>Web Design & Development</h3>
+                <p>Crafting visually stunning, user-friendly websites that engage your audience and drive results.</p>
+            </div>
+            <div class="service">
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive interfaces and seamless user experiences that keep your customers coming back.</p>
+            </div>
+            <div class="service">
+                <h3>SEO Optimization</h3>
+                <p>Boosting your online presence and search engine rankings to attract more visitors and grow your business.</p>
+            </div>
+            <div class="service">
+                <h3>Digital Marketing</h3>
+                <p>Creating effective marketing strategies that connect you with your target audience and maximize ROI.</p>
+            </div>
+            <div class="service">
+                <h3>Branding & Identity</h3>
+                <p>Building strong, memorable brands that stand out in today’s competitive market.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="About" id="aboutus">
+        <h2>About Us</h2>
+        <div class="aboutbox">
+            <p>
+                We are passionate about transforming ideas into impactful digital solutions.<br>
+                With a team of experienced professionals, we specialize in web design, development,<br>
+                and digital strategy tailored to meet the unique needs of each client.<br>
+                Our commitment to excellence drives us to deliver innovative, <br>
+                user-centric products that help businesses grow and succeed in a competitive marketplace.<br>
+                We believe in building lasting partnerships through transparency, creativity, and a relentless pursuit of quality.<br>
+                Whether you are a startup or an established enterprise.<br>
+                DRAXX is dedicated to helping you achieve your goals with solutions that are both effective and inspiring.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contactz">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="https://formspree.io/f/xzzgbekp" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <br><br><br><br>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2025 DRAXX. All rights reserved. | Made in lagos, Nigeria.<br>
+        @ Adebayo Damilare Daniel
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
