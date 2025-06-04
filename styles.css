@@ -380,6 +380,29 @@ body {
     color: #ffcc00;
 }
 
+/* Stylish main action button */
+#showImageBtn, #hideImageBtn {
+    background: linear-gradient(90deg, #ffcc00 60%, #ff8800 100%);
+    color: #222;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+}
+
+#showImageBtn:hover, #hideImageBtn:hover {
+    background: linear-gradient(90deg, #ff8800 60%, #ffcc00 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+}
+
 /* Footer */
 .footer {
     background: #ffcc00;

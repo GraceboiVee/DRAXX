@@ -107,3 +107,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// Show/hide image on button click
+document.addEventListener('DOMContentLoaded', function() {
+    const showBtn = document.getElementById('showImageBtn');
+    const hideBtn = document.getElementById('hideImageBtn');
+    const imgDiv = document.getElementById('mainImageContainer');
+    if (showBtn && hideBtn && imgDiv) {
+        showBtn.addEventListener('click', function() {
+            imgDiv.style.display = 'block';
+            showBtn.style.display = 'none';
+        });
+        hideBtn.addEventListener('click', function() {
+            imgDiv.style.display = 'none';
+            showBtn.style.display = 'inline-block';
+        });
+    }
+});
