@@ -85,27 +85,35 @@ document.addEventListener('DOMContentLoaded', function () {
         loader.style.display = 'none';
         document.body.style.overflow = '';
     }, 1500);
+});
 
-    // =========================
-    // Hamburger Menu
-    // =========================
-    // Hamburger menu toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navContainer = document.querySelector('.navlinks-container');
-    if (navToggle && navContainer) {
-        navToggle.addEventListener('click', function () {
-            navToggle.classList.toggle('open');
-            navContainer.classList.toggle('open');
-        });
-        // Optional: close menu when a link is clicked
-        navContainer.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navToggle.classList.remove('open');
-                navContainer.classList.remove('open');
-            });
-        });
+window.addEventListener('load', function() {
+    const loader = document.getElementById('loader');
+    if (loader) {
+        loader.style.opacity = '0';
+        setTimeout(() => loader.style.display = 'none', 400);
     }
 });
+
+// =========================
+// Hamburger Menu
+// =========================
+// Hamburger menu toggle
+const navToggle = document.querySelector('.nav-toggle');
+const navContainer = document.querySelector('.navlinks-container');
+if (navToggle && navContainer) {
+    navToggle.addEventListener('click', function () {
+        navToggle.classList.toggle('open');
+        navContainer.classList.toggle('open');
+    });
+    // Optional: close menu when a link is clicked
+    navContainer.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navToggle.classList.remove('open');
+            navContainer.classList.remove('open');
+        });
+    });
+}
 
 // Show/hide image on button click
 document.addEventListener('DOMContentLoaded', function() {

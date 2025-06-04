@@ -562,3 +562,40 @@ body {
     }
 }
 
+/* Modern Loader Animation */
+#loader {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+    transition: opacity 0.4s;
+}
+.spinner {
+    display: flex;
+    gap: 12px;
+}
+.spinner .dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffcc00 60%, #ff8800 100%);
+    animation: bounce 0.8s infinite alternate;
+}
+.spinner .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.spinner .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+@keyframes bounce {
+    to {
+        transform: translateY(-22px) scale(1.2);
+        opacity: 0.7;
+    }
+}
+
